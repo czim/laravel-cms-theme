@@ -1,4 +1,4 @@
-# Content Management System for Laravel - Theme Package
+# CMS for Laravel - Theme Package
 
 Simple default theme package to use with the CMS Core.
 This is a simple web-based bootstrap setup, not recommended for more than demonstrative purposes.
