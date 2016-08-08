@@ -1,61 +1,33 @@
-<div class="collapse navbar-collapse" id="app-navbar-collapse">
 
-    @if (cms_auth()->check())
+@if (cms_auth()->check())
 
-        <ul class="nav navbar-nav">
+    <div class="navbar-default sidebar" role="navigation">
 
-            @foreach ($menu->getMenuGroups() as $group)
+        <div class="sidebar-nav navbar-collapse">
+            <ul class="nav" id="side-menu">
 
-                @include('cms::menu.group', [
-                    'group' => $group,
-                    'level' => 1,
-                ])
+                @foreach ($menu->getMenuGroups() as $group)
 
-            @endforeach
+                    @include('cms::menu.group', [
+                        'group' => $group,
+                        'level' => 1,
+                    ])
 
-            @foreach ($menu->getMenuUngrouped() as $node)
+                @endforeach
 
-                @include('cms::menu.node', [
-                    'node' => $node,
-                    'level' => 1,
-                ])
+                @foreach ($menu->getMenuUngrouped() as $node)
 
-            @endforeach
+                    @include('cms::menu.node', [
+                        'node' => $node,
+                        'level' => 1,
+                    ])
 
-        </ul>
+                @endforeach
 
-    @endif
+            </ul>
+        </div>
 
-    <!-- Right Side Of Navbar -->
-    <ul class="nav navbar-nav navbar-right">
+    </div>
 
-        <!-- Authentication Links -->
-        @if ( ! cms_auth()->check())
+@endif
 
-            <li>
-                <a href="{{ cms_route(\Czim\CmsCore\Support\Enums\NamedRoute::AUTH_LOGIN) }}">
-                    {{ cms_trans('auth.labels.login') }}
-                </a>
-            </li>
-
-        @else
-
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                    {{ trim(cms_auth()->user()->first_name . ' ' . cms_auth()->user()->last_name) ?: cms_auth()->user()->email }}
-                    <span class="caret"></span>
-                </a>
-
-                <ul class="dropdown-menu" role="menu">
-                    <li>
-                        <a href="{{ cms_route(\Czim\CmsCore\Support\Enums\NamedRoute::AUTH_LOGOUT) }}">
-                            <i class="fa fa-btn fa-sign-out"></i>
-                            {{ cms_trans('auth.labels.logout') }}
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        @endif
-    </ul>
-
-</div>

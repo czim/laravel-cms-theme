@@ -1,16 +1,35 @@
 
 @if (isset($group['children']) && count($group['children']))
 
-    <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+    <?php
+            $levelClass = '';
+
+            if ($level == 2) {
+                $levelClass = 'nav-second-level';
+            } elseif ($level == 3) {
+                $levelClass = 'nav-third-level';
+            } elseif ($level == 4) {
+                $levelClass = 'nav-fourth-level';
+            }
+    ?>
+
+    <li>
+        <a href="#">
+
+            @if ($group['image'])
+                <i class="fa fa-{{ $group['image'] }} fa-fw"></i>
+            @endif
+
             @if (Lang::has('cms::' . $group['label']))
                 {{ trans('cms::' . $group['label']) }}
             @else
                 {{ $group['label'] }}
             @endif
-            <span class="caret"></span>
+
+            <span class="fa arrow"></span>
         </a>
-        <ul class="dropdown-menu">
+
+        <ul class="nav {{ $levelClass }}">
 
             @foreach ($group['children'] as $child)
 

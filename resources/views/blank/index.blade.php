@@ -9,6 +9,9 @@
                     <div class="panel-body">
                         <h3>Testing page</h3>
 
+                        <u>{{ request()->route()->getActionName() }}</u><br>
+                        <u>{{ request()->route()->getName() }}</u><br>
+
                         Current controller/action: {{ Route::currentRouteAction() }}
                         <br>
                         Current route name: {{ Route::currentRouteName() }}
