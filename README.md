@@ -4,6 +4,39 @@ Simple default theme package to use with the CMS Core.
 This is a simple web-based bootstrap setup, not recommended for more than demonstrative purposes.
 
 
+## Installation
+
+Add the service provider to the `cms-core.php` config (*NOT* your `app.php` config!):
+
+``` php
+    'providers' => [
+        // ...
+        \Czim\CmsTheme\CmsThemeServiceProvider::class,
+    ],
+```
+
+To publish the assets for the CMS theme:
+
+``` bash
+php artisan vendor:publish
+```
+
+
+## Compiling assets
+
+An Elixir setup is provided for compiling the assets for the CMS.
+The output directory for this process is `resources/assets/build`.
+
+To compile css and javascript, you can run
+
+``` bash
+npm install
+gulp --production
+```
+
+... in the base directory of this repository.
+ 
+
 ## Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
