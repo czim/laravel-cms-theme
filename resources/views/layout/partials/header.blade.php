@@ -16,23 +16,7 @@
 
     <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.metismenu/1.1.2/css/metismenu.min.css">
 
-    <link rel="stylesheet" href="{{ asset('css/sb-admin-2.css') }} ">
-    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
-
-    <style>
-        body {
-            font-family: 'Lato', 'sans-serif';
-        }
-
-        .fa-btn {
-            margin-right: 6px;
-        }
-
-        #page-wrapper .container-fluid {
-            padding-top: 2em;
-        }
-
-    </style>
+    <link rel="stylesheet" href="{{ asset('_cms/css/app.css') }} ">
 </head>
 <body id="app-layout">
 

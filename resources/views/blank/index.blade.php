@@ -22,6 +22,12 @@
                             <b>{{$key}}</b>: {{ $ware }}<br>
                         @endforeach
 
+                        <?php
+                            var_dump(CmsModel::isForModel());
+                            var_dump(CmsModel::forModel());
+                            var_dump(CmsModel::info());
+                        ?>
+
                     </div>
 
                 </div>
