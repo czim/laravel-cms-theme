@@ -270,4 +270,24 @@ table.dataTable thead .sorting:after {
 .panel-yellow a:hover {
   color: #df8a13; }
 
+.filter-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .filter-container .form-group {
+    margin-right: 0.5em; }
+
+th.column {
+  white-space: nowrap; }
+
+th.column a.sort {
+  text-decoration: none; }
+  th.column a.sort .fa {
+    color: #aaa; }
+  th.column a.sort.active .fa {
+    color: #000; }
+
 /*# sourceMappingURL=app.css.map */

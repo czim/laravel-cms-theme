@@ -372,3 +372,38 @@ table.dataTable thead .sorting:after {
 .panel-yellow a:hover {
     color: #df8a13;
 }
+
+// --------------------------------
+//  Index / Records
+// --------------------------------
+
+.filter-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+
+    .form-group {
+        margin-right: 0.5em;
+    }
+}
+
+th.column {
+    white-space: nowrap;
+}
+
+th.column a.sort {
+    text-decoration: none;
+
+    .fa {
+        color: #aaa;
+    }
+
+    &.active {
+        .fa {
+            color: #000;
+        }
+    }
+}
