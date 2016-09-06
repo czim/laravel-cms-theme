@@ -270,6 +270,9 @@ table.dataTable thead .sorting:after {
 .panel-yellow a:hover {
   color: #df8a13; }
 
+.scope-tabs {
+  margin-bottom: 1em; }
+
 .filter-container {
   display: -ms-flexbox;
   display: flex;
@@ -279,6 +282,10 @@ table.dataTable thead .sorting:after {
   justify-content: flex-end; }
   .filter-container .form-group {
     margin-right: 0.5em; }
+
+.listing-footer .pagination {
+  margin-top: 0;
+  margin-bottom: 0; }
 
 th.column {
   white-space: nowrap; }

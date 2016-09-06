@@ -377,6 +377,10 @@ table.dataTable thead .sorting:after {
 //  Index / Records
 // --------------------------------
 
+.scope-tabs {
+    margin-bottom: 1em;
+}
+
 .filter-container {
     display: -webkit-flex;
     display: flex;
@@ -387,6 +391,13 @@ table.dataTable thead .sorting:after {
 
     .form-group {
         margin-right: 0.5em;
+    }
+}
+
+.listing-footer {
+    .pagination {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 
