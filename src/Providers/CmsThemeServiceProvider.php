@@ -69,6 +69,7 @@ class CmsThemeServiceProvider extends ServiceProvider
     {
         $this->publishes([
             realpath(dirname(__DIR__)) . '/../resources/assets/build' => public_path('_cms'),
+            realpath(dirname(__DIR__)) . '/../resources/assets/img'   => public_path('_cms/img'),
             realpath(dirname(__DIR__)) . '/../resources/lang'         => base_path('resources/lang/czim/cms'),
         ], 'assets');
 
