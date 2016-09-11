@@ -8,6 +8,10 @@ return [
         'new-record' => 'New :name',
     ],
 
+    'pagination' => [
+        'page-size' => 'page size',
+    ],
+
 	'filter' => [
 	    'title'        => 'Filter:',
 	    'button-label' => 'Filter',

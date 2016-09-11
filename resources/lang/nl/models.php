@@ -8,6 +8,10 @@ return [
         'new-record' => 'Voeg :name toe',
     ],
 
+    'pagination' => [
+        'page-size' => 'per pagina',
+    ],
+
 	'filter' => [
 	    'title'        => 'Filter:',
 	    'button-label' => 'Filter',

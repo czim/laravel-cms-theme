@@ -287,6 +287,23 @@ table.dataTable thead .sorting:after {
   margin-top: 0;
   margin-bottom: 0; }
 
+.listing-footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 2em; }
+  .listing-footer .pagination, .listing-footer .listing-counts {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .listing-footer > div {
+    margin-right: 2em; }
+    .listing-footer > div:last-child {
+      margin-left: auto;
+      margin-right: 0; }
+
 th.column {
   white-space: nowrap; }
 

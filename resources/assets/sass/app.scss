@@ -401,6 +401,28 @@ table.dataTable thead .sorting:after {
     }
 }
 
+.listing-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2em;
+
+    .pagination, .listing-counts {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    & > div {
+        margin-right: 2em;
+
+        &:last-child {
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+}
+
+
 th.column {
     white-space: nowrap;
 }
