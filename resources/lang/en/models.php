@@ -26,4 +26,10 @@ return [
         'total'  => 'total',
     ],
 
+    'activatable' => [
+        'activated'   => 'activated',
+        'deactivated' => 'deactivated',
+        'activate'    => 'activate',
+        'deactivate'  => 'deactivate',
+    ],
 ];
