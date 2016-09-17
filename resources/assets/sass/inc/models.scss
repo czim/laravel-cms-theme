@@ -1,0 +1,98 @@
+
+// listing
+// ---------------------------------------
+
+.scope-tabs {
+    margin-bottom: 1em;
+}
+
+.filter-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+
+    .form-group {
+        margin-right: 0.5em;
+    }
+}
+
+.listing-footer {
+    .pagination {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.listing-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2em;
+
+    .pagination, .listing-counts {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    & > div {
+        margin-right: 2em;
+
+        &:last-child {
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+}
+
+
+th.column {
+    white-space: nowrap;
+}
+
+th.column a.sort {
+    text-decoration: none;
+
+    .fa {
+        color: #aaa;
+    }
+
+    &.active {
+        .fa {
+            color: #000;
+        }
+    }
+}
+
+
+.column-activate .activate-toggle {
+    cursor: pointer;
+    padding: 4px;
+}
+
+.column-activate .icon-wrapper {
+    position: relative;
+    width: 1em;
+    height: 1em;
+    padding-top: 0.5em;
+}
+
+.column-activate .loading,
+.column-activate .active,
+.column-activate .inactive {
+    transition: opacity 0.25s 0s;
+}
+
+.column-activate .loading,
+.column-activate .inactive,
+.column-activate .active{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.column-activate .hidden {
+    opacity: 0;
+}

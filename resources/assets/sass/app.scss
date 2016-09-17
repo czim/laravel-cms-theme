@@ -1,9 +1,6 @@
-/*!
- * Start Bootstrap - SB Admin 2 (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
 
+@import 'inc/animations';
+@import 'inc/models';
 
 body {
     font-family: 'Lato', 'sans-serif';
@@ -373,70 +370,3 @@ table.dataTable thead .sorting:after {
     color: #df8a13;
 }
 
-// --------------------------------
-//  Index / Records
-// --------------------------------
-
-.scope-tabs {
-    margin-bottom: 1em;
-}
-
-.filter-container {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-
-    .form-group {
-        margin-right: 0.5em;
-    }
-}
-
-.listing-footer {
-    .pagination {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-}
-
-.listing-footer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 2em;
-
-    .pagination, .listing-counts {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    & > div {
-        margin-right: 2em;
-
-        &:last-child {
-            margin-left: auto;
-            margin-right: 0;
-        }
-    }
-}
-
-
-th.column {
-    white-space: nowrap;
-}
-
-th.column a.sort {
-    text-decoration: none;
-
-    .fa {
-        color: #aaa;
-    }
-
-    &.active {
-        .fa {
-            color: #000;
-        }
-    }
-}
