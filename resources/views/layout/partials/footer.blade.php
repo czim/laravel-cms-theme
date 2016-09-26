@@ -9,6 +9,7 @@
 <script src="//cdn.jsdelivr.net/bootstrap.metismenu/1.1.2/js/metismenu.min.js" crossorigin="anonymous"></script>
 
 <script src="{{ asset('_cms/js/app.js') }}"></script>
+<script src="{{ asset('_cms/js/jquery-sortable.js') }}"></script>
 
 @stack('javascript-end')
 
