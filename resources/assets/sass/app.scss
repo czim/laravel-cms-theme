@@ -1,6 +1,8 @@
 
 @import 'inc/animations';
 @import 'inc/models';
+@import 'inc/jquery_sortable';
+@import 'inc/tables';
 
 body {
     font-family: 'Lato', 'sans-serif';
@@ -35,127 +37,7 @@ body {
     margin-right: 6px;
 }
 
-.navbar-top-links {
-    margin-right: 0;
-
-    li {
-        display: inline-block;
-
-        &:last-child {
-            margin-right: 15px;
-        }
-
-        a {
-            padding: 15px;
-            min-height: 50px;
-        }
-    }
-
-    .dropdown-menu {
-        li {
-            display: block;
-
-            a {
-                padding: 3px 20px;
-                min-height: 0;
-
-                div {
-                    white-space: normal;
-                }
-            }
-        }
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-
-    .dropdown-messages,
-    .dropdown-tasks,
-    .dropdown-alerts {
-        width: 310px;
-        min-width: 0;
-    }
-
-    .dropdown-messages {
-        margin-left: 5px;
-    }
-
-    .dropdown-tasks {
-        margin-left: -59px;
-    }
-
-    .dropdown-alerts {
-        margin-left: -123px;
-    }
-
-    .dropdown-user {
-        right: 0;
-        left: auto;
-    }
-}
-
-
-.sidebar {
-
-    .sidebar-nav.navbar-collapse {
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    .sidebar-search {
-        padding: 15px;
-    }
-
-    ul li {
-        border-bottom: 1px solid #e7e7e7;
-    }
-
-    ul li a.active {
-        background-color: #eee;
-    }
-
-    .arrow {
-        float: right;
-    }
-
-    .fa.arrow:before {
-        content: "\f104";
-    }
-
-    .active>a>.fa.arrow:before {
-        content: "\f107";
-    }
-
-    .nav-second-level li,
-    .nav-third-level li {
-        border-bottom: 0!important;
-    }
-
-    .nav-second-level li a {
-        padding-left: 37px;
-    }
-
-    .nav-third-level li a {
-        padding-left: 52px;
-    }
-
-}
-
-@media(min-width:768px) {
-    .sidebar {
-        z-index: 1;
-        position: absolute;
-        width: 250px;
-        margin-top: 51px;
-    }
-
-    .navbar-top-links .dropdown-messages,
-    .navbar-top-links .dropdown-tasks,
-    .navbar-top-links .dropdown-alerts {
-        margin-left: auto;
-    }
-}
+@import 'inc/menu';
 
 
 .btn-outline {
@@ -369,4 +251,27 @@ table.dataTable thead .sorting:after {
 .panel-yellow a:hover {
     color: #df8a13;
 }
+
+
+// Bootstrap model align vertically in middle
+
+.modal {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
 

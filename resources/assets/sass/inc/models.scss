@@ -96,3 +96,9 @@ th.column a.sort {
 .column-activate .hidden {
     opacity: 0;
 }
+
+// Fix to prevent wrapping on button groups in the table
+.btn-group.record-actions,
+ .column-orderable .btn-group {
+    display: flex;
+}

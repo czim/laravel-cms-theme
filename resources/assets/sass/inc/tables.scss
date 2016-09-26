@@ -1,0 +1,31 @@
+
+tr .tr-show-on-hover {
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+tr:hover .tr-show-on-hover {
+    opacity: 1;
+}
+
+
+td.column{
+
+    &.primary-id {
+        font-size: 80%;
+    }
+
+    &.column-date {
+        font-style: italic;
+        font-size: 80%;
+        text-align: center;
+    }
+
+    &.column-right {
+        text-align: right;
+    }
+
+    &.column-center {
+        text-align: center;
+    }
+}
