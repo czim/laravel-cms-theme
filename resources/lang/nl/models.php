@@ -54,4 +54,14 @@ return [
         'insert-at-position'       => 'invoegen op plaats',
     ],
 
+    'delete' => [
+        'failure' => [
+            'not-authorized' => 'Verwijderen niet toegestaan voor dit gebruikersaccount',
+            'disallowed'     => 'Records van dit type mogen niet worden verwijderd',
+            'in-use'         => 'Dit record is in gebruik en kan niet worden verwijderd',
+            'is-active'      => 'Dit record is actief en kan niet worden verwijderd',
+            'unknown'        => 'Het record kon niet worden verwijderd',
+        ],
+    ],
+
 ];

@@ -54,4 +54,14 @@ return [
         'insert-at-position'       => 'insert at position',
     ],
 
+    'delete' => [
+        'failure' => [
+            'not-authorized' => 'No authorization to delete records of this type',
+            'disallowed'     => 'Not allowed to delete records of this type',
+            'in-use'         => 'This record is still in use and may not be deleted',
+            'is-active'      => 'This record is active and may not be deleted',
+            'unknown'        => 'The record could not be deleted',
+        ],
+    ],
+
 ];
