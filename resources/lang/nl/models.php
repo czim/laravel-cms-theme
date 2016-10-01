@@ -4,10 +4,6 @@ return [
 
     'no-records-found' => 'Geen :name gevonden.',
 
-    'action' => [
-        'delete' => 'verwijder',
-    ],
-
     'button' => [
         'new-record' => 'Voeg :name toe',
     ],

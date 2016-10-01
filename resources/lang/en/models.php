@@ -4,10 +4,6 @@ return [
 
     'no-records-found' => 'no :name found.',
 
-    'action' => [
-        'delete' => 'delete',
-    ],
-
     'button' => [
         'new-record' => 'New :name',
     ],
