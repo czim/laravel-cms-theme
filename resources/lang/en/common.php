@@ -14,6 +14,12 @@ return [
         'confirm' => 'confirm',
     ],
 
+    'buttons' => [
+        'save'           => 'save',
+        'save-and-close' => 'save and close',
+        'cancel'         => 'cancel',
+    ],
+
     'cannot-undo' => 'This action cannot be undone.',
 
 ];
