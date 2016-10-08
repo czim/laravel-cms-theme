@@ -60,4 +60,8 @@ return [
         ],
     ],
 
+    'store' => [
+        'general-error' => 'Er ging iets mis bij het opslaan. Probeer het nog eens.',
+    ],
+
 ];

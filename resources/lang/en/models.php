@@ -60,4 +60,8 @@ return [
         ],
     ],
 
+    'store' => [
+        'general-error' => 'Error saving model. Please try again.',
+    ],
+
 ];
