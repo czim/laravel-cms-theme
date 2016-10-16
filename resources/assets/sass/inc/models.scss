@@ -130,10 +130,22 @@ th.column a.sort {
     .nav-tabs {
         margin-bottom: 3em;
     }
+}
+
+.model-form {
 
     fieldset {
         margin-top: 1em;
         margin-bottom: 2em;
     }
+
+    .field-group-container {
+        display: flex;
+
+        .field-group-child:not(:first-child) {
+            margin-left: 1em;
+        }
+    }
+
 }
 
