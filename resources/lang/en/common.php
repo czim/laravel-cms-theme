@@ -22,4 +22,8 @@ return [
 
     'cannot-undo' => 'This action cannot be undone.',
 
+    'boolean' => [
+        'true'  => 'true',
+        'false' => 'false',
+    ],
 ];

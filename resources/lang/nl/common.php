@@ -22,4 +22,9 @@ return [
 
     'cannot-undo' => 'Dit kan niet ongedaan worden gemaakt.',
 
+    'boolean' => [
+        'true'  => 'ja',
+        'false' => 'nee',
+    ],
+
 ];
