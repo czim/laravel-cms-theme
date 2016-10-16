@@ -102,3 +102,38 @@ th.column a.sort {
  .column-orderable .btn-group {
     display: flex;
 }
+
+
+
+// form
+// ---------------------------------------
+
+.edit-button-row {
+    margin-top: 2em;
+}
+
+.translated-form-field-locale-select {
+    margin-left: 1em;
+
+    .dropdown-menu {
+        min-width: 0 !important;
+    }
+}
+
+.translated-form-field-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.tab-container {
+
+    .nav-tabs {
+        margin-bottom: 3em;
+    }
+
+    fieldset {
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+}
+
