@@ -51,6 +51,7 @@ return [
     ],
 
     'delete' => [
+        'success-message' => ':record succesvol verwijderd.',
         'failure' => [
             'not-authorized' => 'Verwijderen niet toegestaan voor dit gebruikersaccount',
             'disallowed'     => 'Records van dit type mogen niet worden verwijderd',
@@ -61,7 +62,12 @@ return [
     ],
 
     'store' => [
-        'general-error' => 'Er ging iets mis bij het opslaan. Probeer het nog eens.',
+        'success-message-create'     => ':record succesvol toegevoegd.',
+        'success-message-edit'       => ':record succesvol bewerkt.',
+        'success-message-position'   => ':record succesvol verplaatst.',
+        'success-message-activate'   => ':record geactiveerd.',
+        'success-message-deactivate' => ':record gedeactiveerd.',
+        'general-error'              => 'Er ging iets mis bij het opslaan. Probeer het nog eens.',
     ],
 
 ];

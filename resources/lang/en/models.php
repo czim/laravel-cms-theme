@@ -51,6 +51,7 @@ return [
     ],
 
     'delete' => [
+        'success-message' => ':record successfully deleted.',
         'failure' => [
             'not-authorized' => 'No authorization to delete records of this type',
             'disallowed'     => 'Not allowed to delete records of this type',
@@ -61,7 +62,12 @@ return [
     ],
 
     'store' => [
-        'general-error' => 'Error saving model. Please try again.',
+        'success-message-create'     => ':record successfully created.',
+        'success-message-edit'       => ':record successfully edited.',
+        'success-message-position'   => ':record succesfully moved.',
+        'success-message-activate'   => ':record activated.',
+        'success-message-deactivate' => ':record deactivated.',
+        'general-error'              => 'Error saving model. Please try again.',
     ],
 
 ];

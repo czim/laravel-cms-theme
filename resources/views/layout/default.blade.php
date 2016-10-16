@@ -14,6 +14,8 @@
 
             @yield('breadcrumbs')
 
+            @include('cms::layout.partials.flash-messages')
+
             @include('cms::layout.errors')
 
             @yield('content')
