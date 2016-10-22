@@ -27,4 +27,10 @@ return [
         'false' => 'nee',
     ],
 
+    'errors' => [
+        'form' => [
+            'general-validation' => 'Controleer de invoer en probeer het opnieuw.',
+        ],
+    ],
+
 ];

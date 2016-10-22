@@ -26,4 +26,10 @@ return [
         'true'  => 'true',
         'false' => 'false',
     ],
+
+    'errors' => [
+        'form' => [
+            'general-validation' => 'Check your input and try again.',
+        ],
+    ],
 ];

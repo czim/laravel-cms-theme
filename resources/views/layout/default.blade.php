@@ -16,7 +16,9 @@
 
             @include('cms::layout.partials.flash-messages')
 
-            @include('cms::layout.errors')
+            @section('errors')
+                @include('cms::layout.errors')
+            @show
 
             @yield('content')
 
