@@ -30,6 +30,7 @@ return [
     'errors' => [
         'form' => [
             'general-validation' => 'Check your input and try again.',
+            'errors-on-tab'      => 'There were errors with the input on this tab pane',
         ],
     ],
 ];
