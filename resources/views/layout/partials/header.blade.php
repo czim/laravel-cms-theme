@@ -23,6 +23,8 @@
 
     <link rel="stylesheet" href="{{ asset('_cms/css/app.css') }} ">
     <link rel="stylesheet" href="{{ asset('_cms/css/featherlight.min.css') }} ">
+    <link rel="stylesheet" href="{{ asset('_cms/css/bootstrap-datetimepicker.min.css') }} ">
+
 </head>
 <body id="app-layout">
 
