@@ -50,6 +50,12 @@ return [
         'insert-at-position'       => 'invoegen op plaats',
     ],
 
+    'upload' => [
+        'browse'           => 'selecteer',
+        'remove'           => 'verwijder huidige selectie',
+        'nothing-uploaded' => 'Geen bestand geüploadet',
+    ],
+
     'delete' => [
         'success-message' => ':record succesvol verwijderd.',
         'failure' => [

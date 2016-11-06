@@ -50,6 +50,12 @@ return [
         'insert-at-position'       => 'insert at position',
     ],
 
+    'upload' => [
+        'browse'           => 'browse',
+        'remove'           => 'clear the current upload',
+        'nothing-uploaded' => 'No upload yet',
+    ],
+
     'delete' => [
         'success-message' => ':record successfully deleted.',
         'failure' => [
