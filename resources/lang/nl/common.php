@@ -18,6 +18,8 @@ return [
         'save'           => 'opslaan',
         'save-and-close' => 'opslaan en terug',
         'cancel'         => 'annuleren',
+        'add'            => 'toevoegen',
+        'remove'         => 'verwijderen',
     ],
 
     'cannot-undo' => 'Dit kan niet ongedaan worden gemaakt.',

@@ -172,3 +172,9 @@ th.column a.sort {
     display: block;
 }
 
+// pivot orderable / editable on form
+// ---------------------------------------
+
+.row-orderable {
+    cursor: move;
+}

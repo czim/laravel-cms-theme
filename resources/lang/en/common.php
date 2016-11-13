@@ -18,6 +18,8 @@ return [
         'save'           => 'save',
         'save-and-close' => 'save and close',
         'cancel'         => 'cancel',
+        'add'            => 'add',
+        'remove'         => 'remove',
     ],
 
     'cannot-undo' => 'This action cannot be undone.',
