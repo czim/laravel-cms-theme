@@ -13,8 +13,9 @@ return [
     ],
 
 	'filter' => [
-	    'title'        => 'Filter:',
-	    'button-label' => 'Filter',
+	    'title'          => 'Filter:',
+	    'button-label'   => 'Filter',
+        'anything-label' => 'Elk veld',
     ],
 
     'scope' => [
