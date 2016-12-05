@@ -157,6 +157,15 @@ th.column a.sort {
         }
     }
 
+    .control-label.required:after {
+        content: "*";
+        color: #bbb;
+        font-family: 'Glyphicons Halflings';
+        font-weight: normal;
+        font-size: 11px;
+        padding-left: 0.5em;
+    }
+
 }
 
 // file uploads
