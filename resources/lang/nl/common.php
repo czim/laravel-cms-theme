@@ -2,7 +2,8 @@
 
 return [
 
-    'home' => 'home',
+    'admin' => 'admin',
+    'home'  => 'home',
 
     'action' => [
         'close'   => 'sluiten',
@@ -20,6 +21,12 @@ return [
         'cancel'         => 'annuleren',
         'add'            => 'toevoegen',
         'remove'         => 'verwijderen',
+    ],
+
+    'attributes' => [
+        'id'         => 'id',
+        'created-at' => 'gemaakt',
+        'updated-at' => 'bijgewerkt',
     ],
 
     'cannot-undo' => 'Dit kan niet ongedaan worden gemaakt.',

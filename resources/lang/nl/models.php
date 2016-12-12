@@ -5,7 +5,8 @@ return [
     'no-records-found' => 'Geen :name gevonden.',
 
     'button' => [
-        'new-record' => 'Voeg :name toe',
+        'new-record'    => 'Voeg :name toe',
+        'delete-record' => 'Verwijder :name',
     ],
 
     'pagination' => [

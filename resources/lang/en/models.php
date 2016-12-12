@@ -6,6 +6,7 @@ return [
 
     'button' => [
         'new-record' => 'New :name',
+        'delete-record' => 'Delete :name',
     ],
 
     'pagination' => [

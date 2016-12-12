@@ -2,7 +2,8 @@
 
 return [
 
-    'home' => 'home',
+    'admin' => 'admin',
+    'home'  => 'home',
 
     'action' => [
         'close'   => 'close',
@@ -20,6 +21,12 @@ return [
         'cancel'         => 'cancel',
         'add'            => 'add',
         'remove'         => 'remove',
+    ],
+
+    'attributes' => [
+        'id'         => 'id',
+        'created-at' => 'created at',
+        'updated-at' => 'updated at',
     ],
 
     'cannot-undo' => 'This action cannot be undone.',
