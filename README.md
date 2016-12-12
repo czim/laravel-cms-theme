@@ -37,6 +37,16 @@ gulp --production
 ... in the base directory of this repository.
  
 
+## Plugins and scripts used
+
+- [CKEditor](http://ckeditor.com)
+- [Bootstrap datetime picker](https://github.com/Eonasdan/bootstrap-datetimepicker)
+- [MomentJS](http://momentjs.com) with locales
+- [Featherlight](http://noelboss.github.io/featherlight)
+- [jQuery sortable](http://johnny.github.com/jquery-sortable)
+- [Multiselect with two sides](http://crlcu.github.io/multiselect) ([documentation](http://crlcu.github.io/multiselect/examples/zero-configuration.html))
+
+
 ## Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
