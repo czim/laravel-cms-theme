@@ -41,5 +41,26 @@ $(function () {
             break;
         }
     }
+});
 
+// Select dropdown paceholder.
+// Give select a class of placeholder, and its first option will be a hidden,
+// option that shows as greyed out in the form input. If an additional empty
+// option is present and selected, it will default back to the placeholder.
+$(function () {
+
+    $('select.placeholder').change(function() {
+
+        var placeholderOption = $(this).children('option:first-child');
+
+        if ($(this).val() == '' && ! placeholderOption.is(':selected')) {
+            placeholderOption.prop('selected', true);
+        }
+
+        if (placeholderOption.is(':selected')) {
+            $(this).addClass('placeholder-active');
+        } else {
+            $(this).removeClass('placeholder-active');
+        }
+    }).change();
 });

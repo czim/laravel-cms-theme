@@ -275,3 +275,17 @@ table.dataTable thead .sorting:after {
 }
 
 
+// Placeholder, greyed out when active
+
+select.placeholder-active {
+    color: #999;
+}
+
+select.placeholder {
+    option:first-child {
+        color: #fff;
+    }
+    option {
+        color: #555;
+    }
+}
