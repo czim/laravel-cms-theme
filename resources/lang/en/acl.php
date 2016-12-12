@@ -16,14 +16,20 @@ return [
         ],
 
         'form' => [
-            'email'           => 'Email Address',
-            'password'        => 'Password',
-            'password-new'    => 'New Password',
-            'password-repeat' => 'Repeat Password',
-            'name'            => 'Name',
-            'first-name'      => 'First Name',
-            'last-name'       => 'Last Name',
-            'roles'           => 'Roles',
+            'email'              => 'Email Address',
+            'password'           => 'Password',
+            'password-new'       => 'New Password',
+            'password-repeat'    => 'Repeat Password',
+            'name'               => 'Name',
+            'first-name'         => 'First Name',
+            'last-name'          => 'Last Name',
+            'roles'              => 'Roles',
+            'current-roles'      => 'Current Roles',
+            'available-roles'    => 'Available Roles',
+            'select-all-roles'   => 'Assign all roles to user',
+            'select-roles'       => 'Assign selected roles to user',
+            'deselect-all-roles' => 'Unassign all roles from user',
+            'deselect-roles'     => 'Unassign selected roles from user',
         ],
 
         'columns' => [
@@ -42,9 +48,15 @@ return [
         ],
 
         'form' => [
-            'key'             => 'Key',
-            'name'            => 'Name',
-            'permissions'     => 'Permissions',
+            'key'                      => 'Key',
+            'name'                     => 'Name',
+            'permissions'              => 'Permissions',
+            'current-permissions'      => 'Current Permissions',
+            'available-permissions'    => 'Available Permissions',
+            'select-all-permissions'   => 'Add all permissions to role',
+            'select-permissions'       => 'Add selected permissions to role',
+            'deselect-all-permissions' => 'Remove all permissions from role',
+            'deselect-permissions'     => 'Remove selected permissions from role',
         ],
 
         'columns' => [
