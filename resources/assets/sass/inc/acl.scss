@@ -1,0 +1,27 @@
+
+// multiple two-part select input
+// ---------------------------------------
+
+.multiselect-form-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left-panel {
+        flex: 3;
+    }
+
+    .buttons-panel {
+        flex: 1;
+        padding: 0 1em;
+    }
+
+    .right-panel {
+        flex: 3;
+    }
+
+    .panel-header {
+        margin-bottom: 0.5em;
+    }
+}
+
