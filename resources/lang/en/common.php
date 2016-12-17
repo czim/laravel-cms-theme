@@ -2,8 +2,9 @@
 
 return [
 
-    'admin' => 'admin',
-    'home'  => 'home',
+    'admin'  => 'admin',
+    'home'   => 'home',
+    'search' => 'search',
 
     'action' => [
         'close'   => 'close',
