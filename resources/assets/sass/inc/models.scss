@@ -75,6 +75,9 @@ th.column a.sort {
     }
 }
 
+.records-table td.default-action {
+    cursor: pointer;
+}
 
 .column-activate .activate-toggle {
     cursor: pointer;
