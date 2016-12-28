@@ -52,6 +52,14 @@ return [
         'insert-at-position'       => 'insert at position',
     ],
 
+    'list-parents' => [
+        'back-to-all-models'          => 'Back to all :models',
+        'all-models'                  => 'All :models',
+        'children-for-parent-with-id' => ':children for :parent :id',
+        'children-list-link'          => 'list of :children (:count)',
+        'models'                      => 'records',
+    ],
+
     'upload' => [
         'browse'           => 'browse',
         'remove'           => 'clear the current upload',

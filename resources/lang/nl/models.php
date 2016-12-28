@@ -52,6 +52,14 @@ return [
         'insert-at-position'       => 'invoegen op plaats',
     ],
 
+    'list-parents' => [
+        'back-to-all-models'          => 'Terug naar alle :models',
+        'all-models'                  => 'Alle :models',
+        'children-for-parent-with-id' => ':children van :parent :id',
+        'children-list-link'          => 'lijst met :children (:count)',
+        'models'                      => 'records',
+    ],
+
     'upload' => [
         'browse'           => 'selecteer',
         'remove'           => 'verwijder huidige selectie',
