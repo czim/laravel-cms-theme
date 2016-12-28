@@ -12,6 +12,7 @@ return [
         'create'  => 'create',
         'delete'  => 'delete',
         'edit'    => 'edit',
+        'view'    => 'view',
         'save'    => 'save',
         'confirm' => 'confirm',
     ],

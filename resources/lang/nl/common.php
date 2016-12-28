@@ -12,6 +12,7 @@ return [
         'create'  => 'aanmaken',
         'delete'  => 'verwijderen',
         'edit'    => 'bewerken',
+        'view'    => 'bekijken',
         'save'    => 'opslaan',
         'confirm' => 'bevestigen',
     ],
