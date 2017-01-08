@@ -57,6 +57,7 @@ return [
         'back-to-all-models'          => 'Back to all :models',
         'back-to-top-models'          => 'Back to top :models',
         'all-models'                  => 'All :models',
+        'top-models'                  => 'Top :models',
         'children-for-parent-with-id' => ':children for :parent :id',
         'children-list-link'          => 'list of :children (:count)',
         'models'                      => 'records',

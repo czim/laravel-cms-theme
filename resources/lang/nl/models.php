@@ -57,6 +57,7 @@ return [
         'back-to-all-models'          => 'Terug naar alle :models',
         'back-to-top-models'          => 'Terug naar top-niveau :models',
         'all-models'                  => 'Alle :models',
+        'top-models'                  => 'Top-niveau :models',
         'children-for-parent-with-id' => ':children van :parent :id',
         'children-list-link'          => 'lijst met :children (:count)',
         'models'                      => 'records',
