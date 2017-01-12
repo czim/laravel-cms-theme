@@ -44,6 +44,7 @@ gulp --production
 - [MomentJS](http://momentjs.com) with locales
 - [Featherlight](http://noelboss.github.io/featherlight)
 - [jQuery sortable](http://johnny.github.com/jquery-sortable)
+- [jQuery location picker](https://github.com/Logicify/jquery-locationpicker-plugin) (0.1.15)
 - [Select2](https://select2.github.io) (4.0.3)
 - [Multiselect with two sides](http://crlcu.github.io/multiselect) ([documentation](http://crlcu.github.io/multiselect/examples/zero-configuration.html))
 

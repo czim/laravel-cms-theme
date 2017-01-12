@@ -27,6 +27,7 @@
 <script src="{{ asset('_cms/js/moment-with-locales.min.js') }}"></script>
 <script src="{{ asset('_cms/js/bootstrap-datetimepicker.min.js') }}"></script>
 <script src="{{ asset('_cms/js/bootstrap-colorpicker.min.js') }}"></script>
+<script src="{{ asset('_cms/js/locationpicker.jquery.min.js') }}"></script>
 <script src="{{ asset('_cms/js/jquery-multiselect.min.js') }}"></script>
 
 @stack('javascript-end')
