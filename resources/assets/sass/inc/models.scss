@@ -197,3 +197,14 @@ th.column a.sort {
 .row-orderable {
     cursor: move;
 }
+
+// locationpicker
+// ---------------------------------------
+
+.locatinpicker-inputs {}
+
+.locationpicker-map {
+    max-width: 500px;
+    width: 100%;
+    height: 300px
+}

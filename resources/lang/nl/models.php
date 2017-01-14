@@ -89,4 +89,14 @@ return [
         'general-error'              => 'Er ging iets mis bij het opslaan. Probeer het nog eens.',
     ],
 
+    'location' => [
+        'type-location'  => 'Type locatie',
+        'pick-location'  => 'Kies locatie',
+        'drag-location'  => 'Sleep de pin om een locatie te kiezen',
+        'lat-long-label' => 'Breedte- / lengtegraad',
+        'location'       => 'locatie',
+        'latitude'       => 'breedtegraad',
+        'longitude'      => 'lengtegraad',
+    ],
+
 ];

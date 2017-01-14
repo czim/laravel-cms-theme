@@ -89,4 +89,13 @@ return [
         'general-error'              => 'Error saving model. Please try again.',
     ],
 
+    'location' => [
+        'type-location'  => 'Type a location',
+        'pick-location'  => 'Pick a location',
+        'drag-location'  => 'Drag the marker to pick a location',
+        'lat-long-label' => 'Latitude / longitude',
+        'location'       => 'location',
+        'latitude'       => 'latitude',
+        'longitude'      => 'longitude',
+    ],
 ];
