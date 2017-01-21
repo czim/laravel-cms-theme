@@ -9,10 +9,14 @@
         <span class="icon-bar"></span>
     </button>
 
-    <!-- Branding Image -->
-    <a class="navbar-brand" href="{{ cms_route(\Czim\CmsCore\Support\Enums\NamedRoute::HOME) }}">
-        CMS
-    </a>
+    <!-- Branding Image or Title -->
+    @if (config('cms-theme.header.partial'))
+        @include(config('cms-theme.header.partial'))
+    @else
+        <a class="navbar-brand" href="{{ cms_route(\Czim\CmsCore\Support\Enums\NamedRoute::HOME) }}">
+            {{ config('cms-theme.header.title', 'CMS') }}
+        </a>
+    @endif
 </div>
 
 <!-- Right Side Of Navbar -->

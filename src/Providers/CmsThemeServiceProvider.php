@@ -17,9 +17,23 @@ class CmsThemeServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->registerMenu()
+        $this->registerConfig()
+             ->registerMenu()
              ->loadViews()
              ->publishAssets();
+    }
+
+    /**
+     * @return $this
+     */
+    protected function registerConfig()
+    {
+        $this->mergeConfigFrom(
+            realpath(dirname(__DIR__) . '/../config/cms-theme.php'),
+            'cms-theme'
+        );
+
+        return $this;
     }
 
     /**
