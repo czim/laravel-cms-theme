@@ -47,6 +47,18 @@
     }
 }
 
+.listing-export {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 2em;
+
+    .title {
+        display: inline-block;
+        margin-right: 1em;
+    }
+}
+
 
 th.column {
     white-space: nowrap;

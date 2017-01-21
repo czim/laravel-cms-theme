@@ -89,6 +89,10 @@ return [
         'general-error'              => 'Error saving model. Please try again.',
     ],
 
+    'export' => [
+        'buttons-title' => 'Export this listing:',
+    ],
+
     'location' => [
         'type-location'  => 'Type a location',
         'pick-location'  => 'Pick a location',

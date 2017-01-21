@@ -89,6 +89,10 @@ return [
         'general-error'              => 'Er ging iets mis bij het opslaan. Probeer het nog eens.',
     ],
 
+    'export' => [
+        'buttons-title' => 'Exporteer dit overzicht:',
+    ],
+
     'location' => [
         'type-location'  => 'Type locatie',
         'pick-location'  => 'Kies locatie',
