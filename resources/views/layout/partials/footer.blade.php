@@ -20,15 +20,15 @@
 
 <script src="//cdn.ckeditor.com/4.5.11/full/ckeditor.js"></script>
 
-<script src="{{ asset('_cms/js/app.js') }}"></script>
-<script src="{{ asset('_cms/js/jquery-sortable.js') }}"></script>
-<script src="{{ asset('_cms/js/jquery-select2.min.js') }}"></script>
-<script src="{{ asset('_cms/js/featherlight.min.js') }}"></script>
-<script src="{{ asset('_cms/js/moment-with-locales.min.js') }}"></script>
-<script src="{{ asset('_cms/js/bootstrap-datetimepicker.min.js') }}"></script>
-<script src="{{ asset('_cms/js/bootstrap-colorpicker.min.js') }}"></script>
-{{-- included by view partial: <script src="{{ asset('_cms/js/locationpicker.jquery.min.js') }}"></script>--}}
-<script src="{{ asset('_cms/js/jquery-multiselect.min.js') }}"></script>
+<script src="{{ asset('cms/js/app.js') }}"></script>
+<script src="{{ asset('cms/js/jquery-sortable.js') }}"></script>
+<script src="{{ asset('cms/js/jquery-select2.min.js') }}"></script>
+<script src="{{ asset('cms/js/featherlight.min.js') }}"></script>
+<script src="{{ asset('cms/js/moment-with-locales.min.js') }}"></script>
+<script src="{{ asset('cms/js/bootstrap-datetimepicker.min.js') }}"></script>
+<script src="{{ asset('cms/js/bootstrap-colorpicker.min.js') }}"></script>
+{{-- included by view partial: <script src="{{ asset('cms/js/locationpicker.jquery.min.js') }}"></script>--}}
+<script src="{{ asset('cms/js/jquery-multiselect.min.js') }}"></script>
 
 @stack('javascript-end')
 
