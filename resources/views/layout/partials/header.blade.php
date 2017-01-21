@@ -21,9 +21,9 @@
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.6/select2-bootstrap.min.css">
 
-    <link rel="stylesheet" href="{{ asset('cms/css/app.css') }} ">
-    <link rel="stylesheet" href="{{ asset('cms/css/featherlight.min.css') }} ">
-    <link rel="stylesheet" href="{{ asset('cms/css/bootstrap-datetimepicker.min.css') }} ">
+    <link rel="stylesheet" href="{{ asset('_cms/css/app.css') }} ">
+    <link rel="stylesheet" href="{{ asset('_cms/css/featherlight.min.css') }} ">
+    <link rel="stylesheet" href="{{ asset('_cms/css/bootstrap-datetimepicker.min.css') }} ">
 
     @stack('javascript-head')
 
