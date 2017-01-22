@@ -12,7 +12,8 @@ class CmsThemeServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        $this->loadTranslations();
+        $this->bootConfig()
+             ->loadTranslations();
     }
 
     public function register()
@@ -86,6 +87,18 @@ class CmsThemeServiceProvider extends ServiceProvider
             realpath(dirname(__DIR__)) . '/../resources/assets/img'   => public_path('_cms/img'),
             realpath(dirname(__DIR__)) . '/../resources/lang'         => base_path('resources/lang/czim/cms'),
         ], 'assets');
+
+        return $this;
+    }
+
+    /**
+     * @return $this
+     */
+    protected function bootConfig()
+    {
+        $this->publishes([
+            realpath(dirname(__DIR__) . '/../config/cms-theme.php') => config_path('cms-theme.php'),
+        ]);
 
         return $this;
     }
