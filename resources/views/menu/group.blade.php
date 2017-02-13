@@ -20,11 +20,7 @@
                 <i class="fa fa-{{ $group['image'] }} fa-fw"></i>
             @endif
 
-            @if (Lang::has('cms::' . $group['label']))
-                {{ trans('cms::' . $group['label']) }}
-            @else
-                {{ $group['label'] }}
-            @endif
+            {{ ucfirst($group->label()) }}
 
             <span class="fa arrow"></span>
         </a>
