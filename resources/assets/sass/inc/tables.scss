@@ -14,6 +14,10 @@ td.column{
     &.primary-id {
         font-size: 80%;
     }
+    
+    &.column-activate {
+        width: 2rem;
+    }
 
     &.column-date {
         font-style: italic;
