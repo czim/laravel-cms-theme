@@ -149,6 +149,15 @@ th.column a.sort {
     align-items: flex-start;
 }
 
+.translated-form-field-wrapper {
+    width: 100%;
+    
+    
+    textarea.form-control {
+        resize: vertical;
+    }
+}
+
 .tab-container {
 
     .nav-tabs {
