@@ -8,8 +8,6 @@
 
     <title>{{ config('cms-theme.header.title', 'CMS') }} - @yield('title', 'Dashboard')</title>
 
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:100,300,400,700">
-
     <link rel="stylesheet" href="{{ asset('_cms/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('_cms/css/bootstrap-theme.min.css') }}">
     <link rel="stylesheet" href="{{ asset('_cms/css/jquery-ui.min.css') }}">
