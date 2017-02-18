@@ -39,6 +39,9 @@ return [
     ],
 
     'errors' => [
+        'return-to-home'     => 'Back to home',
+        'return-to-previous' => 'Back one page',
+
         'form' => [
             'general-validation' => 'Check your input and try again.',
             'errors-on-tab'      => 'There were errors with the input on this tab pane',

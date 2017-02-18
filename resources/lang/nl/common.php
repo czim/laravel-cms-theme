@@ -39,6 +39,9 @@ return [
     ],
 
     'errors' => [
+        'return-to-home'     => 'Terug naar home-pagina',
+        'return-to-previous' => 'Terug naar vorige pagina',
+
         'form' => [
             'general-validation' => 'Controleer de invoer en probeer het opnieuw.',
             'errors-on-tab'      => 'Problemen met invoer op dit tabblad',
