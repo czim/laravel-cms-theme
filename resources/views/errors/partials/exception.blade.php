@@ -1,18 +1,24 @@
 <div class="panel panel-default exception" style="margin-bottom: 3em">
 
-    @if (isset($header) && $header)
-        <div class="panel-heading">
-            {{ $previousIndex }}. {{ cms_trans('common.errors.previous-exception') }}
-        </div>
-    @else
-        <div class="panel-heading">
-            {{ cms_trans('common.errors.exception-information') }}
-        </div>
-    @endif
+    <div class="panel-heading">
+        @if (isset($isPrevious) && $isPrevious)
+            <h4>{{ $previousIndex }}. {{ cms_trans('common.errors.previous-exception') }}</h4>
+        @else
+            <h4>{{ cms_trans('common.errors.exception-information') }}</h4>
+        @endif
+    </div>
+
 
     <div class="panel-body exception-introduction">
         <table>
             <tbody>
+                @if ($isPrevious)
+                <tr>
+                    <th>Message</th>
+                    <td><b>{!! nl2br(e($exception->getMessage())) !!}</b></td>
+                </tr>
+                @endif
+
                 <tr>
                     <th>Exception</th>
                     <td>{{ $exception->getClass() }}</td>
@@ -61,7 +67,7 @@
 
 @if ($previous = $exception->getPrevious())
     @include('cms::errors.partials.exception', [
-        'header'        => true,
+        'isPrevious'    => true,
         'previousIndex' => $previousIndex + 1,
         'exception'     => $previous,
     ])
