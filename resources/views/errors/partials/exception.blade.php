@@ -17,10 +17,13 @@
                     <th>Exception</th>
                     <td>{{ $exception->getClass() }}</td>
                 </tr>
-                <tr>
-                    <th>Code</th>
-                    <td>{{ $exception->getCode() }}</td>
-                </tr>
+
+                @if ($exception->getCode())
+                    <tr>
+                        <th>Code</th>
+                        <td>{{ $exception->getCode() }}</td>
+                    </tr>
+                @endif
 
                 @if ($exception->getFile())
                     <tr>

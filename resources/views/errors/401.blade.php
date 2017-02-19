@@ -4,7 +4,7 @@
 
     <header>
         <h1 class="page-header text-danger">
-            {{ cms_trans('common.errors.title.500') }}
+            {{ cms_trans('common.errors.title.401') }}
         </h1>
 
         <div class="text-danger">
