@@ -28,6 +28,16 @@
 </head>
 <body id="app-layout">
 
+<?php
+    // Check if the home route is even available at this point
+    $homeRoute = null;
+    $routePrefix = app(\Czim\CmsCore\Support\Enums\Component::CORE)->config('route.name-prefix');
+
+    if (app('router')->has($routePrefix . \Czim\CmsCore\Support\Enums\NamedRoute::HOME)) {
+        $homeRoute = cms_route(\Czim\CmsCore\Support\Enums\NamedRoute::HOME);
+    }
+?>
+
 <div id="wrapper">
 
     <!-- Navigation -->
@@ -47,7 +57,7 @@
             @if (config('cms-theme.header.partial'))
                 @include(config('cms-theme.header.partial'))
             @else
-                <a class="navbar-brand" href="{{ cms_route(\Czim\CmsCore\Support\Enums\NamedRoute::HOME) }}">
+                <a class="navbar-brand" href="{{ $homeRoute ?: '#' }}">
                     {{ config('cms-theme.header.title', 'CMS') }}
                 </a>
             @endif
@@ -56,11 +66,14 @@
         <!-- Right Side Of Navbar -->
         <ul class="nav navbar-top-links navbar-right">
 
-            <li>
-                <a href="{{ cms_route(\Czim\CmsCore\Support\Enums\NamedRoute::HOME) }}">
-                    {{ cms_trans('common.errors.return-to-home') }}
-                </a>
-            </li>
+            @if ($homeRoute)
+                <li>
+                    <a href="{{ $homeRoute }}">
+                        {{ cms_trans('common.errors.return-to-home') }}
+                    </a>
+                </li>
+            @endif
+
             <li>
                 <a href="javascript: window.history.back();">
                     {{ cms_trans('common.errors.return-to-previous') }}
