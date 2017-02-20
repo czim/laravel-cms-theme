@@ -16,8 +16,8 @@
     <li>
         <a href="#">
 
-            @if ($group['image'])
-                <i class="fa fa-{{ $group['image'] }} fa-fw"></i>
+            @if ($group->image())
+                <i class="fa fa-{{ $group->image() }} fa-fw"></i>
             @endif
 
             {{ ucfirst($group->label()) }}
@@ -27,7 +27,7 @@
 
         <ul class="nav {{ $levelClass }}">
 
-            @foreach ($group['children'] as $child)
+            @foreach ($group->children() as $child)
 
                 @include('cms::menu.node', [
                     'node'  => $child,
