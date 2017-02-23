@@ -70,8 +70,14 @@
         padding: 15px;
     }
 
-    ul li {
-        border-bottom: 1px solid #e7e7e7;
+    ul {
+        li {
+            border-bottom: 1px solid #e7e7e7;
+
+            .fa {
+                margin-right: 0.75rem;
+            }
+        }
     }
 
     ul li a.active {
