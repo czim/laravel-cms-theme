@@ -87,7 +87,7 @@
                     flex-grow: 1;
                 }
                 .menu-group-toggle {
-                    transition: all .2s linear;
+                    transition: all .15s linear;
                 }
 
                 &.active {
@@ -115,13 +115,16 @@
         }
 
         ul {
-
             overflow: hidden;
             border-left: 3px solid #337ab7;
             background-color: #eee;
 
             li {
                 padding-left: 1rem;
+            }
+
+            ul {
+                border-left: none;
             }
         }
         ul:not(.collapse) {

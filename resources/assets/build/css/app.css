@@ -1085,7 +1085,7 @@ body {
       -ms-flex-positive: 1;
       flex-grow: 1; }
     .sidebar ul li a .menu-group-toggle {
-      transition: all .2s linear; }
+      transition: all .15s linear; }
     .sidebar ul li a.active {
       background-color: #eee; }
     .sidebar ul li a:focus {
@@ -1103,6 +1103,8 @@ body {
   background-color: #eee; }
   .sidebar ul ul li {
     padding-left: 1rem; }
+  .sidebar ul ul ul {
+    border-left: none; }
 
 .sidebar ul ul:not(.collapse) {
   height: 0; }
