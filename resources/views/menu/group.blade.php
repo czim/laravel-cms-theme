@@ -20,9 +20,9 @@
                 <i class="fa fa-{{ $group->image() }} fa-fw"></i>
             @endif
 
-            {{ ucfirst($group->label()) }}
+            <span class="menu-item">{{ ucfirst($group->label()) }}</span>
 
-            <span class="fa arrow"></span>
+            <span class="fa fa-angle-right menu-group-toggle"></span>
         </a>
 
         <ul class="nav {{ $levelClass }}">

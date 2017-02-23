@@ -70,30 +70,66 @@
         padding: 15px;
     }
 
+
     ul {
         li {
-            border-bottom: 1px solid #e7e7e7;
+            border-top: 1px solid #e7e7e7;
 
-            .fa {
+            i.fa {
                 margin-right: 0.75rem;
             }
+
+            a {
+                display: flex;
+                align-items: center;
+
+                .menu-item {
+                    flex-grow: 1;
+                }
+                .menu-group-toggle {
+                    transition: all .15s linear;
+                }
+
+                &.active {
+                    background-color: #eee;
+                }
+
+                &:focus {
+                    background-color: transparent;
+                }
+            }
+
+            &.active {
+                .menu-group-toggle {
+                    transform: rotate(90deg);
+                }
+
+                > a {
+                    background-color: transparent;
+                }
+            }
+
+            &:hover, &.active {
+                background-color: transparent;
+            }
         }
-    }
 
-    ul li a.active {
-        background-color: #eee;
-    }
+        ul {
+            overflow: hidden;
+            border-left: 3px solid #337ab7;
+            background-color: #eee;
 
-    .arrow {
-        float: right;
-    }
+            li {
+                padding-left: 1rem;
+            }
 
-    .fa.arrow:before {
-        content: "\f104";
-    }
-
-    .active>a>.fa.arrow:before {
-        content: "\f107";
+            ul {
+                border-left: none;
+            }
+        }
+        ul:not(.collapse) {
+            height: 0;
+        }
     }
 
     .nav-second-level li,
