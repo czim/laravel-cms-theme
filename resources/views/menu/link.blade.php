@@ -6,6 +6,6 @@
             <i class="fa fa-{{ $presence->image() }} fa-fw"></i>
         @endif
 
-        {{ ucfirst($presence->label()) }}
+        <span class="menu-item">{{ ucfirst($presence->label()) }}</span>
     </a>
 </li>
