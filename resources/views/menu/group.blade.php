@@ -1,5 +1,5 @@
 
-@if (isset($group['children']) && count($group['children']))
+@if (count($group->children()))
 
     <?php
             $levelClass = '';
