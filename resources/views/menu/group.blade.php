@@ -16,8 +16,8 @@
     <li>
         <a href="#">
 
-            @if ($group->image())
-                <i class="fa fa-{{ $group->image() }} fa-fw"></i>
+            @if ($group->icon())
+                <i class="fa fa-{{ $group->icon() }} fa-fw"></i>
             @endif
 
             <span class="menu-item">{{ ucfirst($group->label()) }}</span>
