@@ -4,6 +4,8 @@ namespace Czim\CmsTheme\Providers;
 use Czim\CmsCore\Contracts\Core\CoreInterface;
 use Czim\CmsCore\Support\Enums\Component;
 use Czim\CmsTheme\Contracts\Menu\MenuInterface;
+use Czim\CmsTheme\Http\ViewComposers\MenuComposer;
+use Czim\CmsTheme\Http\ViewComposers\TopComposer;
 use Czim\CmsTheme\Menu\Menu;
 use Illuminate\Support\ServiceProvider;
 
@@ -21,6 +23,7 @@ class CmsThemeServiceProvider extends ServiceProvider
         $this->registerConfig()
              ->registerMenu()
              ->loadViews()
+             ->registerViewComposers()
              ->publishAssets();
     }
 
@@ -99,6 +102,21 @@ class CmsThemeServiceProvider extends ServiceProvider
         $this->publishes([
             realpath(dirname(__DIR__) . '/../config/cms-theme.php') => config_path('cms-theme.php'),
         ]);
+
+        return $this;
+    }
+
+    /**
+     * Registers routes for the entire CMS.
+     *
+     * @return $this
+     */
+    protected function registerViewComposers()
+    {
+        $core = $this->getCore();
+
+        view()->composer($core->config('views.menu'), MenuComposer::class);
+        view()->composer($core->config('views.top'), TopComposer::class);
 
         return $this;
     }
