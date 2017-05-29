@@ -20,5 +20,9 @@
 
 @stack('javascript-end')
 
+{!! cms()->assets()->renderScriptAssets() !!}
+
+{!! cms()->assets()->renderScripts() !!}
+
 </body>
 </html>

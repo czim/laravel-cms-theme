@@ -18,7 +18,11 @@
     <link rel="stylesheet" href="{{ asset('_cms/css/featherlight.min.css') }}">
     <link rel="stylesheet" href="{{ asset('_cms/css/bootstrap-datetimepicker.min.css') }}">
 
+    {!! cms()->assets()->renderStyleAssets() !!}
+
     @stack('javascript-head')
+
+    {!! cms()->assets()->renderScriptHeadAssets() !!}
 
 </head>
 <body id="app-layout">
