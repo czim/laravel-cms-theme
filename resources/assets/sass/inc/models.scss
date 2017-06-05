@@ -181,7 +181,15 @@ th.column a.sort {
         }
     }
 
-    .control-label.required:after {
+    .control-label .help-block {
+        font-weight: normal;
+    }
+
+    .control-label .field-label {
+        font-weight: bold;
+    }
+
+    .control-label.required .field-label:after {
         content: "*";
         color: #bbb;
         padding-left: 0.5em;
