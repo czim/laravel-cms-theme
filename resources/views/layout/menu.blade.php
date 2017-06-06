@@ -7,7 +7,7 @@
             <ul class="nav" id="side-menu">
 
                 {{-- Determine whether any icon is used at all at the top level --}}
-                <?php
+                @php
                     /** @var \Czim\CmsCore\Contracts\Menu\MenuRepositoryInterface $menu */
                     $layout  = $menu->getMenuLayout();
                     $hasIcon = false;
@@ -18,7 +18,7 @@
                             break;
                         }
                     }
-                ?>
+                @endphp
 
                 @foreach ($layout as $node)
 

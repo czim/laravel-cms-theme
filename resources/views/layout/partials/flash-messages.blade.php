@@ -1,6 +1,6 @@
-<?php
+@php
     $flashMessages = cms()->notifier()->getFlashed();
-?>
+@endphp
 
 @if ($flashMessages && count($flashMessages))
 

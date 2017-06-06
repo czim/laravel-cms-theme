@@ -28,7 +28,7 @@
 </head>
 <body id="app-layout">
 
-<?php
+@php
     // Check if the home route is even available at this point
     $homeRoute = null;
     $routePrefix = app(\Czim\CmsCore\Support\Enums\Component::CORE)->config('route.name-prefix');
@@ -36,7 +36,7 @@
     if (app('router')->has($routePrefix . \Czim\CmsCore\Support\Enums\NamedRoute::HOME)) {
         $homeRoute = cms_route(\Czim\CmsCore\Support\Enums\NamedRoute::HOME);
     }
-?>
+@endphp
 
 <div id="wrapper">
 

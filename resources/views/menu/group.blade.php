@@ -1,7 +1,7 @@
 
 @if (count($group->children()))
 
-    <?php
+    @php
         $levelClass = '';
 
         if ($level == 2) {
@@ -21,7 +21,7 @@
                 break;
             }
         }
-    ?>
+    @endphp
 
     <li>
         <a href="#">

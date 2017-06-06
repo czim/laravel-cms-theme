@@ -45,10 +45,10 @@
     <table class="table">
         <tbody>
 
-            <?php
+            @php
                 $traces = (new \Czim\CmsCore\Support\Exception\TraceParser)
                     ->parse($exception->getTrace());
-            ?>
+            @endphp
 
             @foreach ($traces as $index => $trace)
 
