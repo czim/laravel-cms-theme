@@ -24,7 +24,8 @@ class CmsThemeServiceProvider extends ServiceProvider
              ->registerMenu()
              ->loadViews()
              ->registerViewComposers()
-             ->publishAssets();
+             ->publishPublicAssets()
+             ->publishResources();
     }
 
     /**
@@ -83,12 +84,23 @@ class CmsThemeServiceProvider extends ServiceProvider
     /**
      * @return $this
      */
-    protected function publishAssets()
+    protected function publishPublicAssets()
     {
         $this->publishes([
             realpath(dirname(__DIR__)) . '/../resources/assets/build' => public_path('_cms'),
             realpath(dirname(__DIR__)) . '/../resources/assets/img'   => public_path('_cms/img'),
-            realpath(dirname(__DIR__)) . '/../resources/lang'         => base_path('resources/lang/vendor/cms'),
+        ], 'public');
+
+        return $this;
+    }
+    
+    /**
+     * @return $this
+     */
+    protected function publishResources()
+    {
+        $this->publishes([
+            realpath(dirname(__DIR__)) . '/../resources/lang' => base_path('resources/lang/vendor/cms'),
         ], 'assets');
 
         return $this;
