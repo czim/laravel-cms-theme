@@ -22,4 +22,20 @@ return [
 
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Pagination
+    |--------------------------------------------------------------------------
+    |
+    | Customize the appearance of pagination links.
+    |
+    */
+
+    'pagination' => [
+
+        // The view partial to use for rendering paginated results.
+        // To use the Laravel default, set this to NULL.
+        'partial' => 'cms.layout.partials.pagination',
+    ],
+
 ];
