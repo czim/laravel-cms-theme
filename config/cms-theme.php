@@ -35,7 +35,7 @@ return [
 
         // The view partial to use for rendering paginated results.
         // To use the Laravel default, set this to NULL.
-        'partial' => 'cms.layout.partials.pagination',
+        'partial' => 'cms::layout.partials.pagination',
     ],
 
 ];
